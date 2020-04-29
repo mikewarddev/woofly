@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>Woofly</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Description" content="Sit. Stay. Find your new best friend.">
+    <script src='js/credentials.js'></script>
+    <link async href="https://fonts.googleapis.com/css?family=Lato:300,700|Quicksand:700&display=swap" rel="stylesheet">
+    <link async href="css/style.css" rel=stylesheet>
+</head>
+
+<body>
+    <div id='top' onclick='goToTop()'>Go to top</div>
+    <header>
+        <h1>Woofly</h1>
+        <span>Sit. Stay. Find your new best friend.</span>
+    </header>
+    <div id=main-loader>
+        <img src="img/main-load.gif">
+        <p>Fetching...</p>
+    </div>
+    <div class='hidden' id='main'>
+        <div id='locale-container'>
+            <h1>What is your zip code?</h1>
+            <input id='locale' maxlength="5" type='text'>
+        </div><div id='type-container'>
+            <h1>I'm looking for a</h1>
+        </div>
+        <div id='submit' onclick='search(true)'>Search</div>
+        <div id='results'>
+            <div class='hidden' id='filters'>
+                <st>Filter By</st><br>
+            </div>
+            <div id='animals'></div>
+        </div>
+    </div>
+</body>
+<script src='js/app.js' type='text/javascript'></script>
+
+</html>
